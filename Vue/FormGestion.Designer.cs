@@ -42,14 +42,14 @@
             this.txtb_Prenom = new System.Windows.Forms.TextBox();
             this.txtb_Nom = new System.Windows.Forms.TextBox();
             this.gb_Gestion = new System.Windows.Forms.GroupBox();
-            this.lb_Absence = new System.Windows.Forms.ListBox();
-            this.lb_Personnel = new System.Windows.Forms.ListBox();
-            this.btn_AjouterPersonnel = new System.Windows.Forms.Button();
-            this.btn_SupprimerPersonnel = new System.Windows.Forms.Button();
-            this.btn_ModifierPersonnel = new System.Windows.Forms.Button();
             this.btn_ModifierAbsence = new System.Windows.Forms.Button();
             this.btn_SupprimerAbsence = new System.Windows.Forms.Button();
             this.btn_AjouterAbsence = new System.Windows.Forms.Button();
+            this.btn_ModifierPersonnel = new System.Windows.Forms.Button();
+            this.btn_SupprimerPersonnel = new System.Windows.Forms.Button();
+            this.btn_AjouterPersonnel = new System.Windows.Forms.Button();
+            this.lb_Absence = new System.Windows.Forms.ListBox();
+            this.lb_Personnel = new System.Windows.Forms.ListBox();
             this.gb_AjoutModifPersonnel.SuspendLayout();
             this.gb_Gestion.SuspendLayout();
             this.SuspendLayout();
@@ -190,51 +190,6 @@
             this.gb_Gestion.TabIndex = 2;
             this.gb_Gestion.TabStop = false;
             // 
-            // lb_Absence
-            // 
-            this.lb_Absence.FormattingEnabled = true;
-            this.lb_Absence.ItemHeight = 15;
-            this.lb_Absence.Location = new System.Drawing.Point(424, 34);
-            this.lb_Absence.Name = "lb_Absence";
-            this.lb_Absence.Size = new System.Drawing.Size(315, 319);
-            this.lb_Absence.TabIndex = 2;
-            // 
-            // lb_Personnel
-            // 
-            this.lb_Personnel.FormattingEnabled = true;
-            this.lb_Personnel.ItemHeight = 15;
-            this.lb_Personnel.Location = new System.Drawing.Point(45, 34);
-            this.lb_Personnel.Name = "lb_Personnel";
-            this.lb_Personnel.Size = new System.Drawing.Size(315, 319);
-            this.lb_Personnel.TabIndex = 1;
-            // 
-            // btn_AjouterPersonnel
-            // 
-            this.btn_AjouterPersonnel.Location = new System.Drawing.Point(134, 388);
-            this.btn_AjouterPersonnel.Name = "btn_AjouterPersonnel";
-            this.btn_AjouterPersonnel.Size = new System.Drawing.Size(133, 23);
-            this.btn_AjouterPersonnel.TabIndex = 3;
-            this.btn_AjouterPersonnel.Text = "Ajouter Personnel";
-            this.btn_AjouterPersonnel.UseVisualStyleBackColor = true;
-            // 
-            // btn_SupprimerPersonnel
-            // 
-            this.btn_SupprimerPersonnel.Location = new System.Drawing.Point(212, 359);
-            this.btn_SupprimerPersonnel.Name = "btn_SupprimerPersonnel";
-            this.btn_SupprimerPersonnel.Size = new System.Drawing.Size(133, 23);
-            this.btn_SupprimerPersonnel.TabIndex = 4;
-            this.btn_SupprimerPersonnel.Text = "Supprimer";
-            this.btn_SupprimerPersonnel.UseVisualStyleBackColor = true;
-            // 
-            // btn_ModifierPersonnel
-            // 
-            this.btn_ModifierPersonnel.Location = new System.Drawing.Point(57, 359);
-            this.btn_ModifierPersonnel.Name = "btn_ModifierPersonnel";
-            this.btn_ModifierPersonnel.Size = new System.Drawing.Size(133, 23);
-            this.btn_ModifierPersonnel.TabIndex = 5;
-            this.btn_ModifierPersonnel.Text = "Modifier";
-            this.btn_ModifierPersonnel.UseVisualStyleBackColor = true;
-            // 
             // btn_ModifierAbsence
             // 
             this.btn_ModifierAbsence.Location = new System.Drawing.Point(440, 359);
@@ -261,6 +216,51 @@
             this.btn_AjouterAbsence.TabIndex = 6;
             this.btn_AjouterAbsence.Text = "Ajouter Absence";
             this.btn_AjouterAbsence.UseVisualStyleBackColor = true;
+            // 
+            // btn_ModifierPersonnel
+            // 
+            this.btn_ModifierPersonnel.Location = new System.Drawing.Point(57, 359);
+            this.btn_ModifierPersonnel.Name = "btn_ModifierPersonnel";
+            this.btn_ModifierPersonnel.Size = new System.Drawing.Size(133, 23);
+            this.btn_ModifierPersonnel.TabIndex = 5;
+            this.btn_ModifierPersonnel.Text = "Modifier";
+            this.btn_ModifierPersonnel.UseVisualStyleBackColor = true;
+            // 
+            // btn_SupprimerPersonnel
+            // 
+            this.btn_SupprimerPersonnel.Location = new System.Drawing.Point(212, 359);
+            this.btn_SupprimerPersonnel.Name = "btn_SupprimerPersonnel";
+            this.btn_SupprimerPersonnel.Size = new System.Drawing.Size(133, 23);
+            this.btn_SupprimerPersonnel.TabIndex = 4;
+            this.btn_SupprimerPersonnel.Text = "Supprimer";
+            this.btn_SupprimerPersonnel.UseVisualStyleBackColor = true;
+            // 
+            // btn_AjouterPersonnel
+            // 
+            this.btn_AjouterPersonnel.Location = new System.Drawing.Point(134, 388);
+            this.btn_AjouterPersonnel.Name = "btn_AjouterPersonnel";
+            this.btn_AjouterPersonnel.Size = new System.Drawing.Size(133, 23);
+            this.btn_AjouterPersonnel.TabIndex = 3;
+            this.btn_AjouterPersonnel.Text = "Ajouter Personnel";
+            this.btn_AjouterPersonnel.UseVisualStyleBackColor = true;
+            // 
+            // lb_Absence
+            // 
+            this.lb_Absence.FormattingEnabled = true;
+            this.lb_Absence.ItemHeight = 15;
+            this.lb_Absence.Location = new System.Drawing.Point(424, 34);
+            this.lb_Absence.Name = "lb_Absence";
+            this.lb_Absence.Size = new System.Drawing.Size(315, 319);
+            this.lb_Absence.TabIndex = 2;
+            // 
+            // lb_Personnel
+            // 
+            this.lb_Personnel.FormattingEnabled = true;
+            this.lb_Personnel.ItemHeight = 15;
+            this.lb_Personnel.Location = new System.Drawing.Point(45, 34);
+            this.lb_Personnel.Name = "lb_Personnel";
+            this.lb_Personnel.Size = new System.Drawing.Size(315, 319);
+            this.lb_Personnel.TabIndex = 1;
             // 
             // FormGestion
             // 
@@ -295,7 +295,6 @@
         private Button btn_RetourAjoutModifPersonnel;
         private Button btn_EnregistrerAjouterPersonnel;
         private GroupBox gb_Gestion;
-        private ListBox lb_Personnel;
         private ListBox lb_Absence;
         private Button btn_ModifierAbsence;
         private Button btn_SupprimerAbsence;
@@ -303,5 +302,6 @@
         private Button btn_ModifierPersonnel;
         private Button btn_SupprimerPersonnel;
         private Button btn_AjouterPersonnel;
+        private ListBox lb_Personnel;
     }
 }

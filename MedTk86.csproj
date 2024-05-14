@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Modele\" />
     <Folder Include="Controlleur\" />
+    <Folder Include="dal\" />
   </ItemGroup>
 
 </Project>
