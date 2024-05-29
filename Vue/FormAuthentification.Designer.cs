@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAuthentification));
             this.gb_Authentification = new System.Windows.Forms.GroupBox();
             this.btn_Connecter = new System.Windows.Forms.Button();
             this.lbl_Mdp = new System.Windows.Forms.Label();
@@ -99,6 +100,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 354);
             this.Controls.Add(this.gb_Authentification);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormAuthentification";
             this.Text = "Authentification";

@@ -15,7 +15,7 @@ namespace MedTk86
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            MedTk86.dal.ConnectionBdd.ConnecterAvecBdd(); 
+            MedTk86.dal.ConnectionBdd.ConnecterAvecBdd();
             FormGestion formGestion = new FormGestion();
             FormAuthentification formAuth = new FormAuthentification(formGestion);
             FormAuthController authController = new FormAuthController(formAuth);

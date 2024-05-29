@@ -19,7 +19,7 @@ namespace MedTk86.dal
         /// </summary>
         static public void ConnecterAvecBdd()
         {
-            string chaineConnexion = "server=127.0.0.1;uid=root;pwd=mdp;database=mediatek86;port=3308";
+            string chaineConnexion = "server=127.0.0.1;uid=gerant;pwd=gerantDeLaBDD;database=mediatek86;port=3306";
             connectionBddManager = BddManager.GetInstance(chaineConnexion);
         }
 

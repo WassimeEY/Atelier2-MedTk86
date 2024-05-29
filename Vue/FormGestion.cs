@@ -68,7 +68,7 @@ namespace MedTk86.Vue
                 {
                     if (absence.idpersonnel == idPersonnelSelected)
                     {
-                        dgv_Absence.Rows.Add(absence.idpersonnel, absence.datedebut, absence.datefin, cb_Motif.Items[absence.idmotif].ToString());
+                        dgv_Absence.Rows.Add(absence.idpersonnel, absence.datedebut, absence.datefin, cb_Motif.Items[absence.idmotif-1].ToString());
                     }
                 }
             }

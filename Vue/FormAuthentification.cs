@@ -1,4 +1,5 @@
 ﻿using MedTk86.Controlleur;
+using MedTk86.dal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,5 +75,6 @@ namespace MedTk86.Vue
                 }
             }
         }
+
     }
 }

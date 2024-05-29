@@ -6,10 +6,27 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <ApplicationIcon>IconeLogiciel.ico</ApplicationIcon>
+    <Title>MediaTek86</Title>
+    <PackageIcon>IconeLogiciel.png</PackageIcon>
+    <StartupObject>MedTk86.Program</StartupObject>
+    <Platforms>AnyCPU;x64;x86</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="IconeLogiciel.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="dal\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\IconeLogiciel.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

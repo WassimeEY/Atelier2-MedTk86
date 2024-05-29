@@ -16,7 +16,7 @@ namespace MedTk86.Controlleur
     public class FormAuthController
     {
         private static FormAuthController instance = null;
-        private BddManager connection = ConnectionBdd.GetConnectionBdd();
+        private BddManager connection;
         private static FormAuthentification formAuthRef;
 
         /// <summary>
@@ -25,6 +25,7 @@ namespace MedTk86.Controlleur
         public FormAuthController(FormAuthentification form)
         {
             formAuthRef = form;
+            connection = ConnectionBdd.GetConnectionBdd();
         }
 
         /// <summary>
@@ -47,5 +48,6 @@ namespace MedTk86.Controlleur
         {
             return connection.ReqSelect("SELECT * FROM responsable");
         }
+
     }
 }

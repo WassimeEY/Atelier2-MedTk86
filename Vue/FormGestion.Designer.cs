@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGestion));
             this.gb_AjoutModifPersonnel = new System.Windows.Forms.GroupBox();
             this.lbl_idPersonnelSelectedNb = new System.Windows.Forms.Label();
             this.lbl_idPersonnelSelected = new System.Windows.Forms.Label();
@@ -53,6 +54,10 @@
             this.mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idservice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_Absence = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateDebut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idmotif = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_GoModifierAbsence = new System.Windows.Forms.Button();
             this.btn_SupprimerAbsence = new System.Windows.Forms.Button();
             this.btn_GoAjouterAbsence = new System.Windows.Forms.Button();
@@ -72,10 +77,6 @@
             this.lbl_Motif = new System.Windows.Forms.Label();
             this.lbl_DateFin = new System.Windows.Forms.Label();
             this.lbl_DateDebut = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateDebut = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idmotif = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb_AjoutModifPersonnel.SuspendLayout();
             this.gb_Gestion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Personnel)).BeginInit();
@@ -340,6 +341,36 @@
             this.dgv_Absence.TabIndex = 9;
             this.dgv_Absence.SelectionChanged += new System.EventHandler(this.dgv_Absence_SelectionChanged);
             // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "id";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 35;
+            // 
+            // DateDebut
+            // 
+            this.DateDebut.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DateDebut.FillWeight = 57.78689F;
+            this.DateDebut.HeaderText = "datedebut";
+            this.DateDebut.Name = "DateDebut";
+            this.DateDebut.ReadOnly = true;
+            // 
+            // DateFin
+            // 
+            this.DateFin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DateFin.FillWeight = 57.78689F;
+            this.DateFin.HeaderText = "datefin";
+            this.DateFin.Name = "DateFin";
+            this.DateFin.ReadOnly = true;
+            // 
+            // idmotif
+            // 
+            this.idmotif.FillWeight = 184.4262F;
+            this.idmotif.HeaderText = "motif";
+            this.idmotif.Name = "idmotif";
+            this.idmotif.ReadOnly = true;
+            // 
             // btn_GoModifierAbsence
             // 
             this.btn_GoModifierAbsence.Enabled = false;
@@ -523,36 +554,6 @@
             this.lbl_DateDebut.TabIndex = 4;
             this.lbl_DateDebut.Text = "Date début";
             // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "id";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 35;
-            // 
-            // DateDebut
-            // 
-            this.DateDebut.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DateDebut.FillWeight = 57.78689F;
-            this.DateDebut.HeaderText = "datedebut";
-            this.DateDebut.Name = "DateDebut";
-            this.DateDebut.ReadOnly = true;
-            // 
-            // DateFin
-            // 
-            this.DateFin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DateFin.FillWeight = 57.78689F;
-            this.DateFin.HeaderText = "datefin";
-            this.DateFin.Name = "DateFin";
-            this.DateFin.ReadOnly = true;
-            // 
-            // idmotif
-            // 
-            this.idmotif.FillWeight = 184.4262F;
-            this.idmotif.HeaderText = "motif";
-            this.idmotif.Name = "idmotif";
-            this.idmotif.ReadOnly = true;
-            // 
             // FormGestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -561,6 +562,7 @@
             this.Controls.Add(this.gb_AjoutModifAbsence);
             this.Controls.Add(this.gb_Gestion);
             this.Controls.Add(this.gb_AjoutModifPersonnel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormGestion";
             this.Text = "Gestion personnel";
             this.Load += new System.EventHandler(this.FormGestion_Load);

@@ -10,6 +10,8 @@ namespace Habilitations.bddmanager
     /// </summary>
     public class BddManager
     {
+        public bool connexionReussi = false;
+
         /// <summary>
         /// instance unique de la classe
         /// </summary>
@@ -25,8 +27,15 @@ namespace Habilitations.bddmanager
         /// <param name="stringConnect">chaine de connexion</param>
         private BddManager(string stringConnect)
         {
-            connection = new MySqlConnection(stringConnect);
-            connection.Open();
+            try
+            {
+                connection = new MySqlConnection(stringConnect);
+                connection.Open();
+                connexionReussi = true;
+            }
+            catch(MySqlException) 
+            { 
+            }
         }
 
         /// <summary>
