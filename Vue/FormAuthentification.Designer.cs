@@ -57,7 +57,7 @@
             this.btn_Connecter.Name = "btn_Connecter";
             this.btn_Connecter.Size = new System.Drawing.Size(263, 40);
             this.btn_Connecter.TabIndex = 4;
-            this.btn_Connecter.Text = "Connecter";
+            this.btn_Connecter.Text = "Se connecter";
             this.btn_Connecter.UseVisualStyleBackColor = true;
             this.btn_Connecter.Click += new System.EventHandler(this.btn_Connecter_Click);
             // 
@@ -101,7 +101,7 @@
             this.Controls.Add(this.gb_Authentification);
             this.MaximizeBox = false;
             this.Name = "FormAuthentification";
-            this.Text = "FormAuthentification";
+            this.Text = "Authentification";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.gb_Authentification.ResumeLayout(false);
             this.gb_Authentification.PerformLayout();
